@@ -1,0 +1,83 @@
+{
+  "_version": "1.1.0",
+  "sap.app": {
+    "_version": "1.1.0",
+    "id": "sap.ui.tum.grid.cpu",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "applicationVersion": {
+      "version": "1.0.0"
+    }
+  },
+  "sap.ui": {
+    "_version": "1.1.0",
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": [
+      "sap_belize"
+    ]
+  },
+  "sap.ui5": {
+    "_version": "1.1.0",
+    "rootView": "sap.ui.tum.grid.cpu.view.App",
+    "dependencies": {
+      "minUI5Version": "1.30",
+      "libs": {
+        "sap.m": {}
+      }
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "sap.ui.tum.grid.cpu.i18n.i18n"
+        }
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "controlId": "appContent",
+        "viewPath": "sap.ui.tum.grid.cpu.view",
+        "controlAggregation": "pages",
+        "async": true
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "overview",
+          "target": "overview"
+        },
+        {
+          "pattern": "detail/{index}",
+          "name": "detail",
+          "target": "detail"
+        }
+      ],
+      "targets": {
+        "overview": {
+          "viewID": "overview",
+          "viewName": "DetailPage"
+        },
+        "detail": {
+          "viewId": "detail",
+          "viewName": "CpuDetail"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    }
+  }
+}

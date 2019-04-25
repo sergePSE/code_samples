@@ -1,0 +1,25 @@
+<core:FragmentDefinition
+        xmlns="sap.m"
+        xmlns:core="sap.ui.core"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        xmlns:custom_ctl="sap.ui.tum.grid.cpu.custom_controls">
+    <Panel width="auto" class="sapUiResponsiveMargin" accessibleRole="Region">
+        <headerToolbar>
+            <Toolbar>
+                <Title class="chart_title"/>
+            </Toolbar>
+        </headerToolbar>
+        <content>
+            <VBox>
+                <html:canvas class="rpiChart"></html:canvas>
+                <CheckBox text="Online" selected="true" />
+                <custom_ctl:RangeSliderNoLabel min="0" max="1000" value="0" value2="1000" width="100%" />
+                <Toolbar>
+                    <DateTimePicker class="chart_from_date_picker" placeholder="From date" displayFormat="short"/>
+                    <ToolbarSpacer></ToolbarSpacer>
+                    <DateTimePicker class="chart_to_date_picker" placeholder="To date" displayFormat="short"/>
+                </Toolbar>
+            </VBox>
+        </content>
+    </Panel>
+</core:FragmentDefinition>

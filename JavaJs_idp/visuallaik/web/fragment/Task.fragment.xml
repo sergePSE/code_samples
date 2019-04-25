@@ -1,0 +1,21 @@
+<core:FragmentDefinition
+        xmlns="sap.m"
+        xmlns:core="sap.ui.core">
+    <Panel width="auto" class="sapUiResponsiveMargin" visible="{/isTaskPresent}">
+        <headerToolbar>
+            <Toolbar height="3rem">
+                <Title text="{/name}"/>
+            </Toolbar>
+        </headerToolbar>
+        <content>
+            <VBox>
+                <Text text="Executable: {/isExecutable}" />
+                <Text text="Command line parameter: {/args}" />
+                <Text text="Rank: {/ranksStr}" />
+                <Text text="Total job execution time={/executionTime}" />
+                <Button text="Kill" type="Reject" width="8em" enabled="{/isKillButtonEnabled}"
+                        press="onKillTaskButtonPress"/>
+            </VBox>
+        </content>
+    </Panel>
+</core:FragmentDefinition>

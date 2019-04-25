@@ -1,0 +1,69 @@
+clusterdescription
+--
+id bigint(20) PK IDENTITY
+connectivity varchar(255) NULL
+fqdn varchar(255) NULL
+isHomogeneous int(11) NULL
+name varchar(255) UNIQUE
+
+context
+--
+id bigint(20) PK IDENTITY
+place varchar(255)
+customDataHeader_id bigint(20) INDEX NULL FK >- customdataheader.id
+graph_id bigint(20) INDEX NULL FK >- graph.id
+node_id bigint(20) INDEX NULL FK >- node.id
+
+customdataheader
+--
+id bigint(20) PK IDENTITY
+value varchar(255) NULL
+
+customdatavalue
+--
+id bigint(20) PK IDENTITY
+time bigint(20) INDEX NULL
+value varchar(255) NULL
+context_id bigint(20) INDEX NULL FK >- context.id
+
+graph
+--
+id bigint(20) PK IDENTITY
+name varchar(100) INDEX NULL
+yAxeName varchar(100) NULL
+yAxeUnitName varchar(100) NULL
+
+graphsample
+--
+id bigint(20) PK IDENTITY
+name varchar(255) INDEX NULL
+context_id bigint(20) INDEX NULL FK >- context.id
+
+graphsampledata
+--
+id bigint(20) PK IDENTITY
+xValue bigint(20) INDEX
+yValue double
+graphSample_id bigint(20) INDEX NULL FK >- graphsample.id
+
+node
+--
+id bigint(20) PK IDENTITY
+columnNumber int(11) UNIQUE
+ip varchar(255) NULL
+isOnline int(11)
+name varchar(255) UNIQUE
+rowNumber int(11) UNIQUE
+clusterDescription_id bigint(20) INDEX NULL FK >- clusterdescription.id
+
+task
+--
+id bigint(20) PK IDENTITY
+args varchar(255)
+isEnded int(11) INDEX
+isExecutable int(11) NULL
+jobStartTime bigint(20)
+name varchar(255)
+ranks varchar(255) NULL
+node_id bigint(20) INDEX NULL FK >- clusterdescription.id
+

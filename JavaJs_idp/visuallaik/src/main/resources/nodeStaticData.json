@@ -1,0 +1,412 @@
+{
+  "clusterDescription": {
+    "connectivity": "Ethernet",
+    "fqdn": "fn.lrr.in.tum.de",
+    "isHomogeneous": 1,
+    "name": "HimMUC_RPI"
+  },
+  "nodes": [
+    {
+      "name": "rpi00",
+      "column": 0,
+      "row": 0,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi01",
+      "column": 1,
+      "row": 0,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi02",
+      "column": 2,
+      "row": 0,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi03",
+      "column": 3,
+      "row": 0,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi04",
+      "column": 4,
+      "row": 0,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi05",
+      "column": 5,
+      "row": 0,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi06",
+      "column": 6,
+      "row": 0,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi07",
+      "column": 7,
+      "row": 0,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi08",
+      "column": 0,
+      "row": 1,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi09",
+      "column": 1,
+      "row": 1,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi10",
+      "column": 2,
+      "row": 1,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi11",
+      "column": 3,
+      "row": 1,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi12",
+      "column": 4,
+      "row": 1,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi13",
+      "column": 5,
+      "row": 1,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi14",
+      "column": 6,
+      "row": 1,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi15",
+      "column": 7,
+      "row": 1,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi16",
+      "column": 0,
+      "row": 2,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi17",
+      "column": 1,
+      "row": 2,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi18",
+      "column": 2,
+      "row": 2,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi19",
+      "column": 3,
+      "row": 2,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi20",
+      "column": 4,
+      "row": 2,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi21",
+      "column": 5,
+      "row": 2,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi22",
+      "column": 6,
+      "row": 2,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi23",
+      "column": 7,
+      "row": 2,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi24",
+      "column": 0,
+      "row": 3,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi25",
+      "column": 1,
+      "row": 3,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi26",
+      "column": 2,
+      "row": 3,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi27",
+      "column": 3,
+      "row": 3,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi28",
+      "column": 4,
+      "row": 3,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi29",
+      "column": 5,
+      "row": 3,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi30",
+      "column": 6,
+      "row": 3,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi31",
+      "column": 7,
+      "row": 3,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi32",
+      "column": 0,
+      "row": 4,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi33",
+      "column": 1,
+      "row": 4,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi34",
+      "column": 2,
+      "row": 4,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi35",
+      "column": 3,
+      "row": 4,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi36",
+      "column": 4,
+      "row": 4,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi37",
+      "column": 5,
+      "row": 4,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi38",
+      "column": 6,
+      "row": 4,
+      "ip": "unknown ip"
+    },{
+      "name": "rpi39",
+      "column": 7,
+      "row": 4,
+      "ip": "unknown ip"
+    },{
+      "name": "odr00",
+      "column": 0,
+      "row": 5,
+      "ip": "unknown ip"
+    },{
+      "name": "odr01",
+      "column": 1,
+      "row": 5,
+      "ip": "unknown ip"
+    },{
+      "name": "odr02",
+      "column": 2,
+      "row": 5,
+      "ip": "unknown ip"
+    },{
+      "name": "odr03",
+      "column": 3,
+      "row": 5,
+      "ip": "unknown ip"
+    },{
+      "name": "odr04",
+      "column": 4,
+      "row": 5,
+      "ip": "unknown ip"
+    },{
+      "name": "odr05",
+      "column": 5,
+      "row": 5,
+      "ip": "unknown ip"
+    },{
+      "name": "odr06",
+      "column": 6,
+      "row": 5,
+      "ip": "unknown ip"
+    },{
+      "name": "odr07",
+      "column": 7,
+      "row": 5,
+      "ip": "unknown ip"
+    },{
+      "name": "odr08",
+      "column": 0,
+      "row": 6,
+      "ip": "unknown ip"
+    },{
+      "name": "odr09",
+      "column": 1,
+      "row": 6,
+      "ip": "unknown ip"
+    },{
+      "name": "odr10",
+      "column": 2,
+      "row": 6,
+      "ip": "unknown ip"
+    },{
+      "name": "odr11",
+      "column": 3,
+      "row": 6,
+      "ip": "unknown ip"
+    },{
+      "name": "odr12",
+      "column": 4,
+      "row": 6,
+      "ip": "unknown ip"
+    },{
+      "name": "odr13",
+      "column": 5,
+      "row": 6,
+      "ip": "unknown ip"
+    },{
+      "name": "odr14",
+      "column": 6,
+      "row": 6,
+      "ip": "unknown ip"
+    },{
+      "name": "odr15",
+      "column": 7,
+      "row": 6,
+      "ip": "unknown ip"
+    },{
+      "name": "odr16",
+      "column": 0,
+      "row": 7,
+      "ip": "unknown ip"
+    },{
+      "name": "odr17",
+      "column": 1,
+      "row": 7,
+      "ip": "unknown ip"
+    },{
+      "name": "odr18",
+      "column": 2,
+      "row": 7,
+      "ip": "unknown ip"
+    },{
+      "name": "odr19",
+      "column": 3,
+      "row": 7,
+      "ip": "unknown ip"
+    },{
+      "name": "odr20",
+      "column": 4,
+      "row": 7,
+      "ip": "unknown ip"
+    },{
+      "name": "odr21",
+      "column": 5,
+      "row": 7,
+      "ip": "unknown ip"
+    },{
+      "name": "odr22",
+      "column": 6,
+      "row": 7,
+      "ip": "unknown ip"
+    },{
+      "name": "odr23",
+      "column": 7,
+      "row": 7,
+      "ip": "unknown ip"
+    },{
+      "name": "odr24",
+      "column": 0,
+      "row": 8,
+      "ip": "unknown ip"
+    },{
+      "name": "odr25",
+      "column": 1,
+      "row": 8,
+      "ip": "unknown ip"
+    },{
+      "name": "odr26",
+      "column": 2,
+      "row": 8,
+      "ip": "unknown ip"
+    },{
+      "name": "odr27",
+      "column": 3,
+      "row": 8,
+      "ip": "unknown ip"
+    },{
+      "name": "odr28",
+      "column": 4,
+      "row": 8,
+      "ip": "unknown ip"
+    },{
+      "name": "odr29",
+      "column": 5,
+      "row": 8,
+      "ip": "unknown ip"
+    },{
+      "name": "odr30",
+      "column": 6,
+      "row": 8,
+      "ip": "unknown ip"
+    },{
+      "name": "odr31",
+      "column": 7,
+      "row": 8,
+      "ip": "unknown ip"
+    },{
+      "name": "odr32",
+      "column": 0,
+      "row": 9,
+      "ip": "unknown ip"
+    },{
+      "name": "odr33",
+      "column": 1,
+      "row": 9,
+      "ip": "unknown ip"
+    },{
+      "name": "odr34",
+      "column": 2,
+      "row": 9,
+      "ip": "unknown ip"
+    },{
+      "name": "odr35",
+      "column": 3,
+      "row": 9,
+      "ip": "unknown ip"
+    },{
+      "name": "odr36",
+      "column": 4,
+      "row": 9,
+      "ip": "unknown ip"
+    },{
+      "name": "odr37",
+      "column": 5,
+      "row": 9,
+      "ip": "unknown ip"
+    },{
+      "name": "odr38",
+      "column": 6,
+      "row": 9,
+      "ip": "unknown ip"
+    },{
+      "name": "odr39",
+      "column": 7,
+      "row": 9,
+      "ip": "unknown ip"
+    }
+    ]
+
+}

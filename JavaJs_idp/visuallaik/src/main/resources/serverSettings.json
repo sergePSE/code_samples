@@ -1,0 +1,7 @@
+{
+  "maxDbSizeMb" : 300,
+  "minDbSizeMb" : 50,
+  "maxDbLogDays" : 30,
+  "minDbLogDays" : 7,
+  "dumpPath" : "../dumps"
+}

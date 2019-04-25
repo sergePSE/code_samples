@@ -1,0 +1,8 @@
+requests
+pygame
+keyboard
+numpy
+pyzbar
+matplotlib
+wheel
+PILLOW

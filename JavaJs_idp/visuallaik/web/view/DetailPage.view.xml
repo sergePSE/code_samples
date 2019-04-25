@@ -1,0 +1,10 @@
+<mvc:View
+        controllerName="sap.ui.tum.grid.cpu.controller.DetailPage"
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        displayBlock="true">
+        <Page id="detail" showHeader="{/isHeaderVisible}" title="RPI grid" >
+                <html:svg id="svg" width="200" height="200"/>
+        </Page>
+</mvc:View>

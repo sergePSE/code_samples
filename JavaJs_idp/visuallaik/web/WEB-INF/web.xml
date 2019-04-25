@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>restRpiNodes</servlet-name>
+        <servlet-class>server.servlet.rest.rpi.RpiNodesController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>charRpiNodeData</servlet-name>
+        <servlet-class>server.servlet.rest.rpi.NodeGraphDataController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>chartData</servlet-name>
+        <servlet-class>server.servlet.rest.rpi.ChartDataController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>restRpiNodes</servlet-name>
+        <url-pattern>/rest/nodes</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>charRpiNodeData</servlet-name>
+        <url-pattern>/rest/nodeData</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>chartData</servlet-name>
+        <url-pattern>/rest/chartData</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+
+    <listener>
+        <listener-class>server.hibernate.HibernateListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>server.socket.NodeServlet</listener-class>
+    </listener>
+    <listener>
+        <listener-class>server.dbDump.DumpDbServlet</listener-class>
+    </listener>
+    
+</web-app>

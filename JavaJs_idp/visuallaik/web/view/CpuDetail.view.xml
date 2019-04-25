@@ -1,0 +1,48 @@
+<mvc:View
+        controllerName="sap.ui.tum.grid.cpu.controller.CpuDetail"
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc"
+        displayBlock="true">
+    <Page showNavButton="true"
+          navButtonPress="onNavBack"
+          floatingFooter="true">
+        <customHeader>
+            <Toolbar binding="/node">
+                <Button type="Back" press="onNavBack" />
+                <ToolbarSpacer/>
+                <Label text="{/name}:{/ip}" />
+                <ObjectStatus icon="sap-icon://status-completed" state="{/state}"></ObjectStatus>
+                <ToolbarSpacer/>
+            </Toolbar>
+        </customHeader>
+        <content>
+            <IconTabBar id="iconTabBar" class="sapUiResponsiveContentPadding">
+                <items>
+                    <IconTabFilter id="overviewTab" icon="sap-icon://message-information">
+                    </IconTabFilter>
+                    <IconTabFilter id="performanceTab" icon="sap-icon://performance" iconColor="Positive">
+
+                    </IconTabFilter>
+                    <IconTabFilter id="taskTab" icon="sap-icon://task" iconColor="Negative">
+
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+            <Toolbar class="sapContrast sapMFooter-CTX mediumTopMargin">
+                <Button icon="sap-icon://log" text="Turn on" visible="{/buttons/turnOnVisible}"
+                        enabled="{/buttons/turnOnEnabled}" press="turnOn"/>
+                <Button icon="sap-icon://log" text="Turn off" visible="{/buttons/turnOffVisible}"
+                        enabled="{/buttons/turnOffEnabled}" press="turnOff"/>
+                <Button icon="sap-icon://restart" text="Reboot" visible="{/buttons/rebootVisible}"
+                        enabled="{/buttons/rebootEnabled}" press="reboot"/>
+            </Toolbar>
+
+            <!--
+            <mvc:XMLView id="chart" viewName="sap.ui.tum.grid.cpu.view.CpuDetailOverview" visible="false"/>
+            <Text id="notesId" text="Notes go here ..." />
+            -->
+        </content>
+
+    </Page>
+
+</mvc:View>

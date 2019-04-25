@@ -1,0 +1,21 @@
+<mvc:View
+        controllerName="sap.ui.tum.grid.cpu.controller.CpuDetailOverview"
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        displayBlock="true">
+    <Panel width="auto" class="sapUiResponsiveMargin" accessibleRole="Region">
+        <headerToolbar>
+            <Toolbar >
+                <Title text="System load"/>
+            </Toolbar>
+        </headerToolbar>
+        <content>
+            <VBox>
+                <html:canvas id="system_load_chart_canvas"></html:canvas>
+                <CheckBox text="Online" selected="true" />
+                <RangeSlider min="0" max="3600" width="100%" class="sapUiMediumMarginBottom" />
+            </VBox>
+        </content>
+    </Panel>
+</mvc:View>

@@ -1,0 +1,29 @@
+<core:FragmentDefinition
+        xmlns="sap.m"
+        xmlns:core="sap.ui.core"
+        xmlns:u="sap.ui.unified">
+    <u:Menu>
+        <u:MenuItem
+                text="Turn on"
+                select="onMenuItemTurnOn"
+                icon="sap-icon://log"
+                class="turnOnMenuItem"
+                visible="{powerOn}"/>
+        <u:MenuItem
+                text="Turn off"
+                select="onMenuItemTurnOff"
+                icon="sap-icon://log"
+                class="turnOffMenuItem"
+                visible="{powerOff}"/>
+        <u:MenuItem
+                text="Show statistics"
+                select="onMenuItemShowStatistics"
+                icon="sap-icon://bar-chart"
+                visible="{menu}"/>
+        <u:MenuItem
+                text="Reboot"
+                select="onMenuItemReboot"
+                icon="sap-icon://restart"
+                visible="{reboot}"/>
+    </u:Menu>
+</core:FragmentDefinition>
